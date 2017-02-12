@@ -1,17 +1,356 @@
-<!doctype html>
-<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>RAWZOO | WEBAPP</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,intial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Taviraj" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.jumbotron {
+      background-color:orange;
+      color:#fff;
+      padding:100px 25px;
+ }
+  .bg-grey {
+        background-color:lightgrey;
+  }
+ .container-fluid {
+      padding:60px 50px;
+ }
+ .logo {
+	color:#f4511e;
+    font-size: 200px;
+ }
+ .logo-small {
+    color: red;
+    font-size: 50px;
+ }
+ .thumbnail {
+    padding: 0 0 15px 0;
+    border:none;
+    border-radius:0;
+ }
+ .thumbnail img {
+    width: 100%;
+    height:100%;
+    margin-bottom:10px;
+ }
+ .panel {
+   border: 1px solid #f4511e;
+   border-radius: 0;
+   transition: box-shadow 0.5s;
+ }
+ .panel-hover {
+   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+ }
+ .panel-footer .btn:hover {
+   border: 1px solid #f4511e;
+   background-color: #fff;
+   color: #f4511e;
+ }
+ .panel-heading {
+   color: #fff;
+   background-color: #f4511e;
+   padding: 25px;
+   border-bottom: :1px solid transparent;
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px;
+   border-bottom-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+
+ }
+ .panel-footer {
+   background-color: #fff;
+ }
+ .panel-footer h3 {
+   font-size: 32px;
+ }
+ .panel-footer h4 {
+   color: #aaa;
+   font-size: 14px;
+ }
+ .panel-footer .btn {
+   margin: 15px 0;
+   background-color: #f4511e;
+   color: #fff;
+ }
+ .navbar {
+    margin-bottom: 0;
+    background-color: orange;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px;
+    line-height: 1.42857143;
+    letter-spacing: 4px;
+    border-radius: 0;
+ }
+ .navbar li a, .navbar .navbar-brand {
+   color:#fff;
+ }
+ .navbar-nav li a:hover, .navbar-nav li.active a {
+   color:orange;
+   background-color: #fff;
+ }
+ .navbar-default .navbar-toggle {
+     border-color: transparent;
+     color: #fff !important;
+ }
+ p {
+    font-family: 'Raleway', sans-serif
+	}
+h4,h2 {
+     font-family: 'Taviraj', serif;
+	 }
+footer .glyphicon {
+      font-size:20px;
+	  margin-bottom:20px;
+	  color:red;
+	  }
+@media screen and (max-width: 768px) {
+  .cols-sm-4 {
+              text-align: center;
+              margin:25px 0;
+  }
+}
+
+
+</style>
+</head>
+
+
+<body>
+<div class="jumbotron text-center">
+  <h1>TechTeam</h1>
+  <p>Get The latest Tech Related News</p>
+  <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+    <button type="button" class="btn btn-danger" id="subsribe">Subscribe</button>
+  </form>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+ <h2>About Company Page</h2>
+ <h4>Technology</h4>
+ <p>Latest News About Technology</p>
+ <button class="btn btn-default btn-lg" id="contact">CONTACT</button>
+  </div>
+  <div class="col-sm-4">
+   <span class="glyphicon glyphicon-signal logo-small"></span>
+  </div>
+ </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="cols-sm-4">
+      <span class="glyphicon glyphicon-globe logo-small"></span>
+    </div>
+   <div class="col-sm-8">
+  <h2>Our rules</h2>
+ <h4><strong>Mission:</strong>To Keep You Updated</h4>
+ <p><strong>Vision:</strong>Not so clear</p>
+  </div>
+ </div>
+</div>
+
+<div class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row">
+    <div class="cols-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>WE are working very</p>
+    </div>
+    <div class="cols-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>Lock</h4>
+      <p>We love each and every coustmer</p>
+    </div>
+	<div class="cols-sm-4">
+	 <span class="glyphicon glyphicon-leaf"></span>
+	 <h4>We care you</h4>
+	 <p>We will protect in every step</p>
+	</div>
+  </div>
+</div>
+
+<div class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2>
+  <h4>What we have created</h4>
+  <div class="row text-center">
+    <div class="thumnail">
+	<div class="col-sm-4">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8AeNcAcNUActWPv+uvz/Clw+wAdtcAgtrC1fEAdNYAb9UAbdQAetgAa9T0+f1opOPr9fzT4/bc7Pmfxe2Is+e51PHj7/pqoeK30PAUhdvf6/lZn+K/0/HU5vdGlt81jN1amuB2qeR1sOelyO4ef9nH4vaVvOrA2/Qzkd611vNEjdxvreYskt+EuelSlN6X3FvGAAACSklEQVR4nO3c3W6iQACG4cJIsaCO4A9bpMhWsdh18f7vbh2hTWHVYtKNndn3OWjSppPwxjDt0Xd3BwAAAAAAAAAAAAAAAAAAAAAAAABfKUiLxzKJ72/9HF9PBotwXSa/4tyzheebVChlVExnP/ax5Qvhua6lCEMKJ6/TWZJZgw9pNd0Lo838frcdjqo06wRdC4NJOO+Nt/nQEkKcLNO1UAZB6JTjfZZ7/pkPTd/CYLOePS9jb2C3XzXdC2Wqvv4WJ24R3Quj8GG9W/bdgfomvzrtGxcG0WLe2y2zfKhuEdey1Q/7RhRKmTq9559ZLvxjWs2IwmDjvBxuEXG4RcRfr5rWhXJSPL4kh7KTaVoXyjR0VsnhVVP/HH/y8HoWPghhn/3QzCj0uz+jpoU2hRRSSCGFFFJIIYUUUkghhRRSSCGFFFJIIYUUUkghhRRSSOH/Uvg0sjsbqQNDv/uB5ukbFUbOFdSB12sONKS3KQS+v0XZ66xUB7r/elt4m8Knkeisukvt7geap/l7SCGFFFJIIYUUUkghhRRSSCGFFFJIIYUUUkghhRRSSCGFFFL4rwvN31QQF8ZMjCiUabheLeN86J7bWdO98D20cGZJ7A8uDXhpXfim2hjq2+ZtDDW970TZ5u1ENVRbX/usXy8GmldYk9VeW27gXluLwZt7LUFx3E0U5u0mNsggMnf7skHtl5b1funlUF0L30Sb+XS8tQzcoG0zd0e44bgFvTJ0C/ojg/e8W8zdZAcAAAAAAAAAAAAAAAAAAAAAAABwzh/vFU7LCfTLKQAAAABJRU5ErkJggg==" alt="pic1">
+      <p><strong>RAJU</strong></p>
+      <p>Yes I am here</p>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="thumnail">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8AeNcAcNUActWPv+uvz/Clw+wAdtcAgtrC1fEAdNYAb9UAbdQAetgAa9T0+f1opOPr9fzT4/bc7Pmfxe2Is+e51PHj7/pqoeK30PAUhdvf6/lZn+K/0/HU5vdGlt81jN1amuB2qeR1sOelyO4ef9nH4vaVvOrA2/Qzkd611vNEjdxvreYskt+EuelSlN6X3FvGAAACSklEQVR4nO3c3W6iQACG4cJIsaCO4A9bpMhWsdh18f7vbh2hTWHVYtKNndn3OWjSppPwxjDt0Xd3BwAAAAAAAAAAAAAAAAAAAAAAAABfKUiLxzKJ72/9HF9PBotwXSa/4tyzheebVChlVExnP/ax5Qvhua6lCEMKJ6/TWZJZgw9pNd0Lo838frcdjqo06wRdC4NJOO+Nt/nQEkKcLNO1UAZB6JTjfZZ7/pkPTd/CYLOePS9jb2C3XzXdC2Wqvv4WJ24R3Quj8GG9W/bdgfomvzrtGxcG0WLe2y2zfKhuEdey1Q/7RhRKmTq9559ZLvxjWs2IwmDjvBxuEXG4RcRfr5rWhXJSPL4kh7KTaVoXyjR0VsnhVVP/HH/y8HoWPghhn/3QzCj0uz+jpoU2hRRSSCGFFFJIIYUUUkghhRRSSCGFFFJIIYUUUkghhRRSSOH/Uvg0sjsbqQNDv/uB5ukbFUbOFdSB12sONKS3KQS+v0XZ66xUB7r/elt4m8Knkeisukvt7geap/l7SCGFFFJIIYUUUkghhRRSSCGFFFJIIYUUUkghhRRSSCGFFFL4rwvN31QQF8ZMjCiUabheLeN86J7bWdO98D20cGZJ7A8uDXhpXfim2hjq2+ZtDDW970TZ5u1ENVRbX/usXy8GmldYk9VeW27gXluLwZt7LUFx3E0U5u0mNsggMnf7skHtl5b1funlUF0L30Sb+XS8tQzcoG0zd0e44bgFvTJ0C/ojg/e8W8zdZAcAAAAAAAAAAAAAAAAAAAAAAABwzh/vFU7LCfTLKQAAAABJRU5ErkJggg==" alt="pic2">
+      <p><strong>Ved</strong></p>
+    </div>
+  </div>
+    <div class="col-sm-4">
+      <div class="thumnail">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8AeNcAcNUActWPv+uvz/Clw+wAdtcAgtrC1fEAdNYAb9UAbdQAetgAa9T0+f1opOPr9fzT4/bc7Pmfxe2Is+e51PHj7/pqoeK30PAUhdvf6/lZn+K/0/HU5vdGlt81jN1amuB2qeR1sOelyO4ef9nH4vaVvOrA2/Qzkd611vNEjdxvreYskt+EuelSlN6X3FvGAAACSklEQVR4nO3c3W6iQACG4cJIsaCO4A9bpMhWsdh18f7vbh2hTWHVYtKNndn3OWjSppPwxjDt0Xd3BwAAAAAAAAAAAAAAAAAAAAAAAABfKUiLxzKJ72/9HF9PBotwXSa/4tyzheebVChlVExnP/ax5Qvhua6lCEMKJ6/TWZJZgw9pNd0Lo838frcdjqo06wRdC4NJOO+Nt/nQEkKcLNO1UAZB6JTjfZZ7/pkPTd/CYLOePS9jb2C3XzXdC2Wqvv4WJ24R3Quj8GG9W/bdgfomvzrtGxcG0WLe2y2zfKhuEdey1Q/7RhRKmTq9559ZLvxjWs2IwmDjvBxuEXG4RcRfr5rWhXJSPL4kh7KTaVoXyjR0VsnhVVP/HH/y8HoWPghhn/3QzCj0uz+jpoU2hRRSSCGFFFJIIYUUUkghhRRSSCGFFFJIIYUUUkghhRRSSOH/Uvg0sjsbqQNDv/uB5ukbFUbOFdSB12sONKS3KQS+v0XZ66xUB7r/elt4m8Knkeisukvt7geap/l7SCGFFFJIIYUUUkghhRRSSCGFFFJIIYUUUkghhRRSSCGFFFL4rwvN31QQF8ZMjCiUabheLeN86J7bWdO98D20cGZJ7A8uDXhpXfim2hjq2+ZtDDW970TZ5u1ENVRbX/usXy8GmldYk9VeW27gXluLwZt7LUFx3E0U5u0mNsggMnf7skHtl5b1funlUF0L30Sb+XS8tQzcoG0zd0e44bgFvTJ0C/ojg/e8W8zdZAcAAAAAAAAAAAAAAAAAAAAAAABwzh/vFU7LCfTLKQAAAABJRU5ErkJggg==" alt="pic3">
+        <p><strong>Ved</strong></p>
+      </div>
+    </div>
+  </div>
+<div class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose your plan</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>BASIC</h1>
         </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
+        <div class="panel-body">
+          <p><strong>20</strong>let</p>
+          <p><strong>2</strong>hi</p>
+          <p><strong>29</strong>bye</p>
+          <p><strong>09</strong>cheers</p>
+          <p><strong>05</strong>let go</p>
         </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+        <div class="panel-body">
+          <h3>$5</h3>
+          <h4>Per year</h4>
+          <button class="btn btn-lg">Sign up</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong>let</p>
+          <p><strong>2</strong>hi</p>
+          <p><strong>29</strong>bye</p>
+          <p><strong>09</strong>cheers</p>
+          <p><strong>05</strong>let go</p>
+        </div>
+        <div class="panel-body">
+          <h3>$50</h3>
+          <h4>Per year</h4>
+          <button class="btn btn-lg">Sign up</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong>let</p>
+          <p><strong>2</strong>hi</p>
+          <p><strong>29</strong>bye</p>
+          <p><strong>09</strong>cheers</p>
+          <p><strong>05</strong>let go</p>
+        </div>
+        <div class="panel-body">
+          <h3>$100</h3>
+          <h4>Per year</h4>
+          <button class="btn btn-lg">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+	<p>Contact us We'll get back to you</p>
+	<p><span class="glyphicon glyphicon-map-marker"></span>Salt lake,Kolkata</p>
+	<p><span class="glyphicon glyphicon-phone"></span>+91 9883142878</p>
+	<p><span class="glyphicon glyphicon-envelope"></span>raju.raw.zoo@gmail.com</p>
+  </div>
+  <div class="col-sm-7">
+   <div class="row">
+    <div class="col-sm-6 form group">
+	 <input class="form-control" id="name" name="name" placeholder="name" type="text" required>
+	 </div>
+	 <div class="col-sm-6 form-group">
+	 <input class="form-control" id="email" name="email" type="email" placeholder="email" required>
+	 </div>
+	 </div>
+	 <textarea class="form-control" id="comment" name="comment" placeholder="comment" rows="5"></textarea><br>
+	   <div class="row">
+	     <div class="col-sm-12 form-group">
+		   <button class="btn btn-default pull-right" type="submit">Send</button>
+		  </div>
+		 </div>
+		</div>
+	   </div>
+	  </div>
+	  <div id="googleMap" style="height:400px;width:100%;">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(22.578460, 88.439195);
+
+function initialize() {
+  var mapProp={
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+  var map= new google.maps,Map(document.getElementById("googleMap"),mapProp);
+
+  var  marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+  marker.setMap(map);
+  }
+  google.maps.event.addDomListener(window, 'load' intialize);
+  </script>
+  </div>
+
+ <nav class="navar navbar-default navbar-fixed-top">
+   <div Class="container">
+    <div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">VUZUONLINE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<footer class="container-fluid text-center">
+ <a href="#myPage" title="To top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+ </a>
+ <p>This site made by Raju KUmar</p>
+ </footer>
+ </div>
+</body>
 </html>
